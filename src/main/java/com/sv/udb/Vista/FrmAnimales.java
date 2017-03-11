@@ -24,7 +24,8 @@ public class FrmAnimales extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         txtCodiSere.setEnabled(false);  
-    llenarcombox();
+        llenarcombox();
+       
     }
 
     /**
@@ -279,7 +280,7 @@ public class FrmAnimales extends javax.swing.JFrame {
     obj.setNomb_sere(txtNombreSerVivo.getText());
     obj.setDesc_sere(txtDescripcion.getText());
     Animales objAnim= (Animales)this.cmbTipo.getSelectedItem();
-    obj.setCodi_sere_refe((objAnim.getCodi_sere_refe() ));
+    obj.setCodi_sere_refe(objAnim.getCodi_sere_refe());
     if(new CtrlAnimales().guar(obj))
     {
     JOptionPane.showMessageDialog(this, "Guardado exitoso");

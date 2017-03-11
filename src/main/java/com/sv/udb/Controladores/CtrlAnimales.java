@@ -34,7 +34,7 @@ public class CtrlAnimales {
        }
        catch (Exception e)
        {
-           JOptionPane.showMessageDialog(null, e.getMessage());
+           JOptionPane.showMessageDialog(null, "Error:"+e.getMessage());
        }
    return resp;
    }
